@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LITS Online Placement Test</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-strip">
+    <div class="top-strip-inner">
+      <span>✉ hello@litsenglish.com</span>
+      <span>English Placement Test</span>
+      <span>Student Access</span>
+    </div>
+  </header>
+
+ <header class="site-header">
+  <a class="brand" href="index.html" aria-label="LITS home">
+
+    <div class="brand-logo-circle">
+      <img
+        src="assets/lits_logo.png"
+        alt="LITS"
+        class="brand-logo"
+      >
+    </div>
+
+    <div class="brand-copy">
+
+      <div class="center-name">
+        TRUNG TÂM ANH NGỮ ANH VIỆT MỸ LITS
+      </div>
+
+      <div class="brand-tagline">
+        QUALITY TO BE YOUR BEST
+      </div>
+
+    </div>
+
+  </a>
+
+</header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">FREE ONLINE ENGLISH TESTS</div>
+        <h1>Find the right English level for every learner.</h1>
+        <p class="lead">Choose a level below and complete a short placement test designed for young English learners.</p>
+        <ul class="benefits">
+          <li><span>✓</span> Quick, clear and child-friendly</li>
+          <li><span>✓</span> Separate tests for each learning stage</li>
+          <li><span>✓</span> Simple results for class placement</li>
+        </ul>
+        <div class="wave-card" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+      <div class="hero-art">
+  <img
+    src="assets/hero_students.png"
+    alt="Students learning English together"
+    class="hero-students-image"
+  >
+</div>
+    </section>
+
+    <section class="levels-section" id="levels">
+      <div class="section-heading">
+        <span>Choose a test</span>
+        <h2>Placement Test Levels</h2>
+        <p>Select the level that best matches the learner.</p>
+      </div>
+
+      <div class="level-layout">
+        <div class="level-list" role="list">
+          <button class="level-button active" data-level="Superkids" role="listitem"><span>Level 1</span><strong>Superkids</strong><i>›</i></button>
+          <button class="level-button" data-level="Starters" role="listitem"><span>Level 2</span><strong>Starters</strong><i>›</i></button>
+          <button class="level-button" data-level="Movers" role="listitem"><span>Level 3</span><strong>Movers</strong><i>›</i></button>
+          <button class="level-button" data-level="Flyers" role="listitem"><span>Level 4</span><strong>Flyers</strong><i>›</i></button>
+          <button class="level-button" data-level="Pre-KET" role="listitem"><span>Level 5</span><strong>Pre-KET</strong><i>›</i></button>
+          <button class="level-button" data-level="KET" role="listitem"><span>Level 6</span><strong>KET</strong><i>›</i></button>
+          <button class="level-button coming-soon" data-level="Level 7" role="listitem"><span>Level 7</span><strong>Coming soon</strong><i>›</i></button>
+        </div>
+
+        <aside class="level-preview">
+          <div class="preview-visual">
+            <img src="assets/lits_logo.webp" alt="LITS" class="preview-logo" />
+            <div class="preview-badge" id="previewBadge">LEVEL 1</div>
+            <div class="preview-character">★</div>
+            <div class="preview-book">ABC</div>
+          </div>
+          <div class="preview-copy">
+            <span class="preview-label">Selected level</span>
+            <h3 id="selectedLevel">Superkids</h3>
+            <p id="selectedDescription">20 very easy listening questions for young beginners.</p>
+            <button id="startButton" type="button">Start Superkids</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="info-section" id="about">
+      <div><strong>Short & friendly</strong><span>Designed for quick placement.</span></div>
+      <div><strong>Level-specific</strong><span>Different tasks for different learners.</span></div>
+      <div><strong>Clear results</strong><span>Easy for teachers to review.</span></div>
+    </section>
+  </main>
+
+  <footer id="contact"><strong>LITS English Center</strong><span>Placement testing for young learners</span></footer>
+  <div class="toast" id="toast" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

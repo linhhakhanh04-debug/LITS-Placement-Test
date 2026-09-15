@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LITS Superkids Listening Test</title>
+  <link rel="stylesheet" href="superkids.css" />
+</head>
+<body>
+  <div class="test-shell">
+    <aside class="test-sidebar">
+      <a href="index.html" class="logo-link"><img src="assets/lits_logo.webp" alt="LITS logo" /></a>
+      <div class="level-chip">LEVEL 1</div>
+      <h1>Superkids</h1>
+      <p>Listening Placement Test</p>
+      <div class="score-side"><span>Questions</span><strong id="sideProgress">0 / 20</strong></div>
+      <div class="side-note">Listen carefully and click the picture you hear.</div>
+      <button class="history-link" id="openHistory" type="button">📊 Teacher History</button>
+      <a class="back-link" href="index.html">← Back to levels</a>
+    </aside>
+
+    <main class="test-main">
+      <header class="student-header">
+        <label><span>Student's name</span><input id="studentName" placeholder="Enter your name" /></label>
+        <label><span>Class</span><input id="studentClass" placeholder="Enter your class" /></label>
+        <div class="timer-box"><small>Time left</small><strong id="timer">15:00</strong></div>
+      </header>
+
+      <section class="test-heading">
+        <div><span class="head-icon">♪</span><div><h2>Listening</h2><p>20 questions · 20 points</p></div></div>
+        <div class="progress-wrap"><span id="progressText">0 / 20 answered</span><div class="progress-track"><i id="progressFill"></i></div></div>
+      </section>
+
+      <section class="part-card">
+        <div class="part-title"><div><span>1</span><h3>Part 1</h3><small>Questions 1–10</small></div><b>Listen and click the correct picture.</b></div>
+        <div id="part1" class="question-grid two-choice"></div>
+      </section>
+
+      <section class="part-card">
+        <div class="part-title purple"><div><span>2</span><h3>Part 2</h3><small>Questions 11–20</small></div><b>Listen and choose the correct picture.</b></div>
+        <div id="part2" class="question-grid three-choice"></div>
+      </section>
+
+      <footer class="test-footer">
+        <span>Each correct answer = 1 point.</span>
+        <button id="submitTest" type="button">Submit test</button>
+      </footer>
+    </main>
+  </div>
+
+  <dialog id="resultDialog">
+    <div class="result-card">
+      <button class="close-dialog" id="closeDialog" type="button">×</button>
+      <img src="assets/lits_logo.webp" alt="LITS" />
+      <span class="result-label">Superkids Listening Result</span>
+      <strong id="resultScore">0 / 20</strong>
+      <p id="resultMessage"></p>
+      <button class="history-result-btn" id="resultHistory" type="button">View history</button><a href="index.html">Back to levels</a>
+    </div>
+  </dialog>
+
+  <dialog id="historyDialog">
+    <div class="history-card">
+      <button class="close-dialog" id="closeHistory" type="button">×</button>
+      <div class="history-head">
+        <div><h2>Teacher History</h2><p>Superkids Listening Test results saved on this browser.</p></div>
+        <div class="history-actions"><button id="exportHistory" type="button">Export CSV</button><button id="clearHistory" type="button" class="danger">Clear</button></div>
+      </div>
+      <div class="history-stats"><div><span>Attempts</span><b id="historyAttempts">0</b></div><div><span>Average</span><b id="historyAverage">0%</b></div><div><span>Best</span><b id="historyBest">0/20</b></div></div>
+      <div class="history-table-wrap"><table><thead><tr><th>Student</th><th>Class</th><th>Score</th><th>Percent</th><th>Time used</th><th>Submitted</th></tr></thead><tbody id="historyBody"></tbody></table></div>
+      <p class="history-note">History is stored locally on this browser/device.</p>
+    </div>
+  </dialog>
+  <div class="toast" id="toast"></div>
+  <script src="superkids.js"></script>
+</body>
+</html>
